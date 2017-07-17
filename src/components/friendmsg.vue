@@ -1,5 +1,5 @@
 <template>
-  <div id="msg">
+  <div id="msg" v-if="selectedFriend.id != 0">
     <div class="base_msg">
       <span class="f_name">{{selectedFriend.nickname}}</span>
       <img :src="(selectedFriend.sex == 1)?'../../static/images/man.png':'../../static/images/woman.png'" class="f_sex">

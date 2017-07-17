@@ -16,6 +16,9 @@ export default {
   components: {
     leftNav
   },
+  mounted () {
+    this.$store.dispatch('initData')
+  },
   name: 'app'
 }
 </script>

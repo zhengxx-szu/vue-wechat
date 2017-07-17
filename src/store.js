@@ -7,33 +7,35 @@ const now = new Date()
 const state = {
   searchText: '',
   user: {
-    name: 'ratel',
+    name: 'zheng',
     img: '../assets/user_avatar.jpg'
   },
-  // 对话好友列表
   chatlist: [{
     id: 1,
     user: {
-      name: '妈咪',
-      img: 'static/images/mother.jpg'
+      name: '大娃',
+      img: 'static/images/one.jpg'
     },
     messages: [{
-      content: '么么哒，妈咪爱你',
+      content: '你好！我是大娃！',
       date: now
     }, {
-      content: '按回车可以发送信息，还可以给我发送表情哟。按回车可以发送信息，还可以给我发送表情哟。按回车可以发送信息，还可以给我发送表情哟。按回车可以发送信息，还可以给我发送表情哟。按回车可以发送信息，还可以给我发送表情哟。',
+      content: '我的弱点是：比较鲁莽，不知随机应变！',
       date: new Date(2016, 0, 11, 5, 45, 45)
     }],
     index: 1
   }, {
     id: 2,
     user: {
-      name: 'father',
-      img: 'static/images/father.jpg'
+      name: '二娃',
+      img: 'static/images/two.jpg'
     },
     messages: [{
-      content: 'Are you kidding me?',
-      date: new Date(2017, 0, 11, 5, 45, 45)
+      content: '你好！我是二娃！',
+      date: now
+    }, {
+      content: '我的弱点是：攻击力与其兄弟相比较过于弱小了，眼睛和耳朵太脆弱！',
+      date: new Date(2016, 0, 11, 5, 45, 45)
     }],
     index: 2
   }, {
@@ -63,127 +65,83 @@ const state = {
     area: ''
   }, {
     id: 1,
-    wxid: 'AmorAres',
-    initial: 'A',
-    img: 'static/images/小姨妈.jpg',
-    signature: '每天我就萌萌哒',
-    nickname: 'Amor',
+    wxid: 'dawa',
+    initial: 'D',
+    img: 'static/images/one.jpg',
+    signature: '力大无穷，巨大化。',
+    nickname: '大娃',
     sex: 0,
-    remark: 'Amor',
+    remark: '红娃',
     area: '浙江 宁波'
   }, {
     id: 2,
-    wxid: 'Big-fly',
-    initial: 'B',
-    img: 'static/images/大飞哥.jpg',
-    signature: '你不知道的js',
-    nickname: 'fly',
+    wxid: 'erwa',
+    initial: 'E',
+    img: 'static/images/two.jpg',
+    signature: '千里眼，顺风耳，灵活聪明，机敏过人，最善于谋划计策。',
+    nickname: '二娃',
     sex: 1,
-    remark: '大飞哥',
-    area: '奥地利 布尔根兰'
+    remark: '橙娃',
+    area: '广东 汕头'
   }, {
     id: 3,
-    wxid: 'microzz ',
-    initial: 'D',
-    img: 'static/images/microzz.jpg',
-    signature: '学习让我快乐让我成长',
-    nickname: 'microzz',
-    sex: 1,
-    remark: '大佬',
-    area: '江西 赣州'
+    wxid: 'sanwa ',
+    initial: 'S',
+    img: 'static/images/three.jpg',
+    signature: '铜头铁臂，钢筋铁骨，刀枪不入。',
+    nickname: '三娃',
+    sex: 0,
+    remark: '黄娃',
+    area: '福建 福州'
   }, {
     id: 4,
-    wxid: 'hwn0366',
-    initial: 'F',
-    img: 'static/images/father.jpg',
-    signature: '学习让我快乐让我成长',
-    nickname: '丢',
+    wxid: 'siwa',
+    initial: 'S',
+    img: 'static/images/four.jpg',
+    signature: '喷火，吸火，霹雳。',
+    nickname: '四娃',
     sex: 1,
-    remark: 'father',
-    area: '江西 抚州'
+    remark: '绿娃',
+    area: '广东 深圳'
   }, {
     id: 5,
-    wxid: 'orange66',
-    initial: 'J',
-    img: 'static/images/orange.jpg',
-    signature: '你可以笑的很阳光！',
-    nickname: 'orange',
-    sex: 1,
-    remark: '橘子',
-    area: '江西 赣州'
+    wxid: 'wuwa',
+    initial: 'W',
+    img: 'static/images/five.jpg',
+    signature: '吸水，吐水，口吐闪电产生降雨。',
+    nickname: '五娃',
+    sex: 0,
+    remark: '青娃',
+    area: '广东 肇庆'
   }, {
     id: 6,
-    wxid: 'Seto_L',
-    img: 'static/images/加菲猫.jpg',
-    signature: '自强不息',
-    nickname: '21',
+    wxid: 'liuwa',
+    initial: 'L',
+    img: 'static/images/six.jpg',
+    signature: '隐身术，透体术，来无影去无踪，聪明机灵，最善于偷盗和行动。',
+    nickname: '六娃',
     sex: 1,
-    remark: '加菲',
-    area: '北京 海淀'
+    remark: '蓝娃',
+    area: '海南 海口'
   }, {
     id: 7,
-    wxid: 'wxid_itjz73t1ajt722',
-    initial: 'M',
-    img: 'static/images/mother.jpg',
-    signature: '开开心心就好',
-    nickname: '娄娄',
+    wxid: 'qiwa',
+    initial: 'Q',
+    img: 'static/images/seven.jpg',
+    signature: '最小，没多大本领，倍受哥哥们的关爱，有宝葫芦。',
+    nickname: '七娃',
     sex: 0,
-    remark: '妈咪',
-    area: '江西 抚州'
+    remark: '紫娃',
+    area: '辽宁 沈阳'
   }, {
     id: 8,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
+    wxid: 'yeye',
+    img: 'static/images/grandpa.jpg',
+    signature: '葫芦娃的爷爷。',
+    nickname: '爷爷',
     sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
-  }, {
-    id: 9,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
-    sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
-  }, {
-    id: 10,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
-    sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
-  }, {
-    id: 11,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
-    sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
-  }, {
-    id: 12,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
-    sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
-  }, {
-    id: 13,
-    wxid: 'hj960503',
-    img: 'static/images/萌萌俊.jpg',
-    signature: '原谅我有点蠢。。',
-    nickname: '。。。。。',
-    sex: 1,
-    remark: '萌萌均',
-    area: '江西 萍乡'
+    remark: '老头儿',
+    area: '湖南 长沙'
   }],
   selectChatId: 1,
   selectFriendId: 0
@@ -191,7 +149,7 @@ const state = {
 
 const mutations = {
   initData (state) {
-    let data = localStorage.getItem('vue-chat')
+    let data = localStorage.getItem('vue-wechat')
     if (data) {
       state.chatlist = JSON.parse(data)
     }
@@ -290,7 +248,7 @@ const store = new Vuex.Store({
 store.watch(
   (state) => state.chatlist,
   (val) => {
-    localStorage.setItem('vue-chat', JSON.stringify(val))
+    localStorage.setItem('vue-wechat', JSON.stringify(val))
   }, {
     deep: true
   }

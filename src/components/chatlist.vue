@@ -26,6 +26,7 @@ export default {
   filters: {
     formatdate (date) {
       let time = new Date()
+      date = new Date(date)
       if (time.getFullYear() === date.getFullYear() && time.getMonth() === date.getMonth() && time.getDate() === date.getDate()) {
         if (date.getHours() < 10) {
           time = '0' + date.getHours() + ':'
