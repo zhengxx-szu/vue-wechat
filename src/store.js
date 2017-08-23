@@ -159,6 +159,7 @@ const mutations = {
   },
   selectChat (state, value) {
     state.selectChatId = value
+    console.log(state.selectChatId)
   },
   selectFriend (state, value) {
     state.selectFriendId = value
@@ -202,8 +203,8 @@ const mutations = {
       })
     } else {
       state.selectChatId = msg.index
-      router.push({ path: '/chat' })
     }
+    router.push({ path: '/chat' })
   }
 }
 const getters = {

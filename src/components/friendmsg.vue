@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="send_msg">
-      <button @click="send()">发消息</button>
+      <button @click="send">发消息</button>
     </div>
   </div>
 </template>

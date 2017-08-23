@@ -95,13 +95,12 @@ export default {
         setTimeout(() => {
           this.warnshow = false
         }, 1000)
-      } else if (this.selectedChat.id === 3) {
+      } else if (this.selectedChat.user.name === '机器人') {
         this.$store.dispatch('sendMessage', this.msg)
         this.$http.post('/api', {
           key: 'af79746f81a541c6885d02eead53ba48',
           info: this.msg
         }).then(res => {
-          // console.log(res)
           this.$store.dispatch('addMessage', res.data.text)
           this.$nextTick(() => {
             this.$refs.msglist.scrollTop = this.$refs.msglist.scrollHeight - this.$refs.msglist.offsetHeight
